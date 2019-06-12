@@ -1,0 +1,23 @@
+<div class="header-area">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4">
+                </div>     
+                <div class="col-md-8">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+
+
+
+                            <%if (user){%>
+                            <li><a href="editInfo"><i class="fa fa-user"></i><%=user.name%></a></li>
+                            <li><a href="logout"><i class="fa fa-user"></i> Đăng xuất</a></li>
+                            <%}else{%>
+                            <li><a href="login"><i class="fa fa-user"></i> Đăng nhập</a></li>
+                            <%}%>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
